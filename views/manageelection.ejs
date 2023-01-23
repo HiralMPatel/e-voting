@@ -12,18 +12,10 @@
     <link href="./css/styles.css" rel="stylesheet">
     </head>
     <body>
-       
-
         <div class="grid grid-cols-6">
             <div class="col-start-3 col-span-2">
                 <%- include('header.ejs') %>
-               <!-- <div class="flex justify-between">
-                    <div>
-                        <a href="/signout" class="text-green-600 ">Signout</a>
-                    </div>
-    
-                </div>
-                <h1 class="py-4"><b>Create New Election</b></h1>-->
+               
                 <% if(messages && messages.error && messages.error.length > 0)  { %>
                     <% for(var i=0; i<messages.error.length; i++) { %>
                             <h3 class="text-red-900 font-bold"> <%= messages.error[i] %></h3>
